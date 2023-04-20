@@ -1,6 +1,6 @@
 #include <stdio>
 /*
-   * main - print a line of code using puts
+   * main - This prints a line of code using puts
    *
    * Return : 0
    */
