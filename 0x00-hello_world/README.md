@@ -1,1 +1,1 @@
-A README for the c files directory
+README for my first c programming projects
