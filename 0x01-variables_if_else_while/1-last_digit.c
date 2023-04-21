@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- *main - assign a random no to a variable which prints out last digit of the num
+ *main - assign a random no to a variable which prints out last digit of the no
  *Return: Always 0
  */
 int main(void)
