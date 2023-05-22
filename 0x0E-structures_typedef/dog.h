@@ -1,14 +1,14 @@
-#ifndef DOG
-#define DOG
+#ifndef DOG_H
+#define DOG_H
 
 /**
- * struct dog - dog class
+ * struct dog - struct for dog info
  *
- * @name: Name of the dog
+ * @name: char type
+ * @age: float type
+ * @owner: char type
  *
- * @age: Age of the dog
- *
- * @owner: Owner of the dog
+ *Description: structure to store dog info
  */
 
 struct dog
@@ -18,12 +18,12 @@ struct dog
 	char *owner;
 };
 
-void init_dog(struct dog *d, char *name, float age, char *owner);
-void print_dog(struct dog *d);
-
 typedef struct dog dog_t;
 
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
 
-#endif /*asa_bea*/
+#endif
+
