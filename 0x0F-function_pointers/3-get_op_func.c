@@ -1,13 +1,14 @@
 #include "3-calc.h"
 #include <stddef.h>
+#include <stdlib.h>
 
 /**
  * get_op_func - Entry point
- * Desc - 'function that selects the correct function
- * to perform the operation asked by the user'
- * @s: the operator passed as argument given by the user
+ * Description: Selects the correct function to perform
+ *               the operation asked by the user.
+ * @s: The operator passed as argument.
  *
- * Return : --
+ * Return: Pointer to the funct given as a parameter.
  */
 
 int (*get_op_func(char *s))(int, int)

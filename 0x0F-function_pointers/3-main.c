@@ -1,13 +1,14 @@
-#include "3-calc.h"
+#include "function_pointers.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include "3-calc.h"
 
 /**
-  * main - Entry point
-  * @argc: number of argumemnts
-  * @argv: array of arguments
-  * Return: Always 0 (sucess)
-  */
+ * main - Prints the results
+ * @argc: Number of arguments supplied to the program.
+ * @argv: An array of pointers to the arguments.
+ * Return: Always 0 (success)
+ */
 
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
@@ -29,7 +30,9 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	if ((*op == '/' && num2 == 0) || (*op == '%' && num2 == 0))
+
+	if ((*op == '/' && num2 == 0) ||
+	    (*op == '%' && num2 == 0))
 	{
 		printf("Error\n");
 		exit(100);
