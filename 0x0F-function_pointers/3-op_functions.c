@@ -26,7 +26,7 @@ int op_sub(int a, int b)
 
 /**
   * op_mul - Entry point
-   'a function that returns products of two integers'
+  * Description - 'a function that returns products of two integers'
   * @a: first integer
   * @b: second integer
   * Return: product of a and b;
@@ -39,7 +39,7 @@ int op_mul(int a, int b)
 
 /**
   * op_div - Entry point
-  * a function that divides two integers'
+  * Description - 'a function that divides two integers'
   * @a: first integer
   * @b: second integer
   * Return: divided value of a and b;
@@ -51,7 +51,7 @@ int op_div(int a, int b)
 
 /**
  * op_mod - Entry point
- * 'calculates the remainder of the division of two integers'
+ * Description - 'calculates the remainder of the division of two integers'
  * @a: first integer
  * @b: second integer
  *
