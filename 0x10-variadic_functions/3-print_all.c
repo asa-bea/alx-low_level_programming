@@ -2,22 +2,22 @@
 
 /**
  * print_all - Prints all of the arguments when specified
- * @format: specifies all  necessary operations
+ * @format: specifies the necessary operations
  * Return: void
  */
 
 void print_all(const char * const format, ...)
 {
-	int a;
+	int i;
 	int flag;
 	char *str;
 	va_list a_list;
 
 	va_start(a_list, format);
-	a = 0;
-	while (format != NULL && format[a] != '\0')
+	i = 0;
+	while (format != NULL && format[i] != '\0')
 	{
-		switch (format[a])
+		switch (format[i])
 		{
 			case 'c':
 				printf("%c", va_arg(a_list, int));
@@ -42,7 +42,7 @@ void print_all(const char * const format, ...)
 				flag = 1;
 				break;
 		}
-		if (format[a + 1] != '\0' && flag == 0)
+		if (format[i + 1] != '\0' && flag == 0)
 			printf(", ");
 		i++;
 	}
